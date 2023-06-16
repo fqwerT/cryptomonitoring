@@ -1,29 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="./assets/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <div class="authpage">
-    <div class="authpage--form">
-      <label for="email">email</label>
-      <input class="authpage--form__input" id="email" required/>
-      <label for="pass">password</label>
-      <input class="authpage--form__input" id="pass" required/>
-      <button class="authpage--form__btn">login</button>
-      <a href="./register/register.html" class="authpage--form__gotoregister">Сreate a new account</a>
-      <a href="./forgotPass/setEmail/setEmail.html" class="authpage--form__forgotpass">Forgot password?</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="authpage">
+      <div class="authpage--form">
+        <label for="email">email</label>
+        <input class="authpage--form__input" id="email" required />
+        <label for="pass">password</label>
+        <input
+          class="authpage--form__input"
+          id="pass"
+          required
+          type="password"
+        />
+        <a href="./mainpage/mainpage.html">
+          <button class="authpage--form__btn">login</button>
+        </a>
+
+        <a href="./register/register.html" class="authpage--form__gotoregister"
+          >Сreate a new account</a
+        >
+        <a
+          href="./forgotPass/setEmail/setEmail.html"
+          class="authpage--form__forgotpass"
+          >Forgot password?</a
+        >
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

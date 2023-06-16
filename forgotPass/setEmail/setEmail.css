@@ -47,6 +47,10 @@ body {
   text-transform: uppercase;
 }
 
+.setemail--form p {
+  text-align: center;
+}
+
 .setemail--form__link {
   text-decoration: none;
   margin: 5px;

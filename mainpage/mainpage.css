@@ -1,0 +1,75 @@
+html {
+  max-height: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-margin-start: 0;
+  -webkit-padding-start: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainpage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: url("../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.mainpage--header {
+  width: 100%;
+  height: 70px;
+  background-color: #5ca5bd8a;
+
+}
+.mainpage--header__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainpage--header__navigation--list {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainpage--header__navigation--list li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+@-webkit-keyframes scale-up-center {
+    0% {
+
+      opacity: 0.3;
+    }
+  
+    100% {
+
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scale-up-center {
+    0% {
+
+      opacity: 0.3;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
