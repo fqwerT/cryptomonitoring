@@ -12,28 +12,23 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  color: black;
-}
-
-.authpage {
+.registerpage {
   height: 100%;
-  background-color: #ffffff;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: /*rgba(2, 92, 69, 0.63)*/url('../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png');
 }
 
-.authpage--form {
+.register--form {
   min-width: 221px;
   min-height: 262px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 30%;
+  height: 40%;
   width: 15%;
   border-radius: 12px;
   background-color: #ffffff;
@@ -44,22 +39,37 @@ a {
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
-.authpage--form label {
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.register--form__gotologin {
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
 }
 
-.authpage--form__input {
+.register--form__gotologin:hover {
+  text-decoration: underline;
+}
+
+.register--form__inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.register--form__inputs input {
   height: 25px;
   border: 1px solid rgba(0, 0, 0, 0.342);
   border-radius: 12px;
   padding-left: 10px;
   margin: 5px;
 }
+.register--form__inputs label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-.authpage--form__btn {
+.register--form__btn {
   margin-top: 50px;
   border: 0;
   background-color: inherit;
@@ -77,7 +87,8 @@ a {
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-.authpage--form__btn:hover {
+
+.register--form__btn:hover {
   transition: 0.4s linear;
   background: rgba(2, 92, 69, 0.63);
   color: white;
@@ -109,21 +120,4 @@ a {
     transform: scale(1);
     opacity: 1;
   }
-}
-
-.authpage--form__gotoregister {
-  margin-top: 20px;
-  text-decoration: none;
-}
-
-.authpage--form__gotoregister:hover {
-  text-decoration: underline;
-}
-.authpage--form__forgotpass {
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-.authpage--form__forgotpass:hover {
-  text-decoration: underline;
 }
