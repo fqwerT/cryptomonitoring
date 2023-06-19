@@ -1,22 +1,40 @@
-html {
-  max-height: 100%;
-  height: 100%;
+@font-face {
+  font-family: "intro-font";
+  src: url("../assets/fonts/Intro.otf");
+}
+@font-face {
+  font-family: "gothic";
+  src: url("../assets/fonts/Gothic.ttf");
+}
+
+S ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
 body {
-  height: 100%;
   padding: 0;
   margin: 0;
   -webkit-margin-start: 0;
   -webkit-padding-start: 0;
   font-family: "Roboto", sans-serif;
+  background: url("../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .mainpage {
   height: 100%;
   width: 100%;
   display: flex;
-  background: url("../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
+  flex-direction: column;
+  align-items: center;
+
   -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -25,7 +43,6 @@ body {
   width: 100%;
   height: 70px;
   background-color: #5ca5bd8a;
-
 }
 .mainpage--header__navigation {
   display: flex;
@@ -48,28 +65,134 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
+.mainpage--container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  flex-direction: column;
+}
 
+.mainpage--container__table {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.815);
+  padding: 15px;
+  margin: 10px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 12px;
+  border-collapse: collapse;
+}
+
+.mainpage--container__table--header {
+  background-color: #5ca5bdea;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.mainpage--container__table--header__row th {
+  font-weight: 500;
+}
+
+.mainpage--container__table--body__row td {
+  text-align: center;
+}
+
+.mainpage--container__table--body__row {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+}
+
+.mainpage--container__table--body__flexbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainpage--container__table--body__flexbox img {
+  width: 23px;
+  height: 23px;
+}
+
+.mainpage--container__table--body__minitext {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mainpage--container__table--pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.mainpage--container__table--pagination__list {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.mainpage--fillters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.mainpage--fillters__label {
+  font-family: "gothic";
+  letter-spacing: 1px;
+}
 
 @-webkit-keyframes scale-up-center {
-    0% {
-
-      opacity: 0.3;
-    }
-  
-    100% {
-
-      opacity: 1;
-    }
+  0% {
+    opacity: 0.3;
   }
-  
-  @keyframes scale-up-center {
-    0% {
 
-      opacity: 0.3;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
+}
+
+@keyframes scale-up-center {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.mainpage--heading {
+  font-family: "intro-font";
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  margin: 30px;
+}
+
+.mainpage--container__table--pagination__list--button__next {
+  border: 0;
+  background: url("../assets/img/arrow-right-svgrepo-com.svg");
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.mainpage--container__table--pagination__list--button__back {
+  border: 0;
+  background: url("../assets/img/arrow-left-svgrepo-com.svg");
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

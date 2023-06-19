@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./mainpage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,19 +11,251 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body>
     <div class="mainpage">
-        <footer class="mainpage--header">
+      <header class="mainpage--header">
         <nav class="mainpage--header__navigation">
-            <ul class="mainpage--header__navigation--list">
-                <li>лучшие обменники</li>
-                <li>помощь</li>
-                <li>личный кабинет</li>
-            </ul>
+          <ul class="mainpage--header__navigation--list">
+            <li>лучшие обменники</li>
+            <li>помощь</li>
+            <li>личный кабинет</li>
+          </ul>
         </nav>
-        </footer>
+      </header>
+      <h1 class="mainpage--heading">Популярные курсы обмена</h1>
+      <div class="mainpage--container">
+        <table class="mainpage--container__table">
+          <thead class="mainpage--container__table--header">
+            <tr class="mainpage--container__table--header__row">
+              <th>Обменник</th>
+              <th>Отдаем ↓</th>
+              <th>Получаем ↑</th>
+              <th>Статус</th>
+              <th>Страна</th>
+              <th>Резерв ₽</th>
+            </tr>
+          </thead>
+          <tbody class="mainpage--container__table--body">
+            <tr class="mainpage--container__table--body__row">
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <img alt="" src="../assets/img/exchanger.svg" />
+                  <p>AlfaExchange</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>1</p>
+                  <p class="mainpage--container__table--body__minitext">btc</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>23123123 ₽</p>
+                  <p class="mainpage--container__table--body__minitext">
+                    acrub
+                  </p>
+                </div>
+              </td>
+              <td>
+                Работает
+              </td>
+              <td>
+                Россия
+              </td>
+              <td>
+                1232131
+              </td>
+            </tr>
+            <tr class="mainpage--container__table--body__row">
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <img alt="" src="../assets/img/exchanger.svg" />
+                  <p>Premium Exchnage</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>1</p>
+                  <p class="mainpage--container__table--body__minitext">
+                    tether
+                  </p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>2323232 ₽</p>
+                  <p class="mainpage--container__table--body__minitext">
+                    qiwirub
+                  </p>
+                </div>
+              </td>
+              <td>
+                Работает
+              </td>
+              <td>
+                Россия
+              </td>
+              <td>
+                1232131
+              </td>
+            </tr>
+            <tr class="mainpage--container__table--body__row">
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <img alt="" src="../assets/img/exchanger.svg" />
+                  <p>adb.z</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>1</p>
+                  <p class="mainpage--container__table--body__minitext">algo</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>2332 ₽</p>
+                  <p class="mainpage--container__table--body__minitext">
+                    qiwirub
+                  </p>
+                </div>
+              </td>
+              <td>
+                Работает
+              </td>
+              <td>
+                Россия
+              </td>
+              <td>
+                1232131
+              </td>
+            </tr>
+            <tr class="mainpage--container__table--body__row">
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <img alt="" src="../assets/img/exchanger.svg" />
+                  <p>exchanger</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>1</p>
+                  <p class="mainpage--container__table--body__minitext">doge</p>
+                </div>
+              </td>
+              <td>
+                <div class="mainpage--container__table--body__flexbox">
+                  <p>332 ₽</p>
+                  <p class="mainpage--container__table--body__minitext">rub</p>
+                </div>
+              </td>
+              <td>
+                Работает
+              </td>
+              <td>
+                Россия
+              </td>
+              <td>
+                1232131
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <nav class="mainpage--container__table--pagination">
+          <ul class="mainpage--container__table--pagination__list">
+            <li>
+              <button
+                class="mainpage--container__table--pagination__list--button__back"
+              ></button>
+            </li>
+            <li>
+              <button
+                class="mainpage--container__table--pagination__list--button__next"
+              ></button>
+            </li>
+          </ul>
+        </nav>
 
+        <h1 class="mainpage--heading">Фильтры</h1>
+        <div class="mainpage--fillters">
+          <div>
+            <label for="choosewallet" class="mainpage--fillters__label"
+              >Отдаете:</label
+            >
+            <select id="choosewallet">
+              <option>btc</option>
+              <option>algo</option>
+              <option>tether</option>
+              <option>acrub</option>
+            </select>
+          </div>
+          <div>
+            <label for="choosewallet">Получаете</label>
+            <select id="choosetime" class="mainpage--fillters__label">
+              <option>acrub</option>
+              <option>btc</option>
+              <option>algo</option>
+              <option>qiwirub</option>
+            </select>
+          </div>
+        </div>
+        <table class="mainpage--container__table">
+            <thead class="mainpage--container__table--header">
+              <tr class="mainpage--container__table--header__row">
+                <th>Обменник</th>
+                <th>Отдаем ↓</th>
+                <th>Получаем ↑</th>
+                <th>Статус</th>
+                <th>Страна</th>
+                <th>Резерв ₽</th>
+              </tr>
+            </thead>
+            <tbody class="mainpage--container__table--body">
+              <tr class="mainpage--container__table--body__row">
+                <td>
+                  <div class="mainpage--container__table--body__flexbox">
+                    <img alt="" src="../assets/img/exchanger.svg" />
+                    <p>AlfaExchange</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="mainpage--container__table--body__flexbox">
+                    <p>1</p>
+                    <p class="mainpage--container__table--body__minitext">btc</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="mainpage--container__table--body__flexbox">
+                    <p>23123123 ₽</p>
+                    <p class="mainpage--container__table--body__minitext">
+                      acrub
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  Работает
+                </td>
+                <td>
+                  Россия
+                </td>
+                <td>
+                  1232131
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+         </div>
+        <h1 class="mainpage--heading">Статистика</h1>
+        <div class="mainpage--statisticpage">
+          <figure>
+            <img src="../assets/img/chart.png" />
+          </figure>
+        </div>
+      </div>
+      <footer></footer>
     </div>
-</body>
+  </body>
 </html>
