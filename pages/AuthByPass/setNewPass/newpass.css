@@ -15,21 +15,20 @@ html {
   .newpass {
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: /*rgba(2, 92, 69, 0.63)*/ url("../../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
   }
   
-  .newpass--form {
-    display: flex;
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .newpass__form {
     flex-direction: column;
     background-color: #fff;
     border-radius: 12px;
     width: 15%;
     padding: 15px;
-    align-items: center;
-    justify-content: center;
     height: 22%;
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);

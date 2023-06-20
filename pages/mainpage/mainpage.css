@@ -1,10 +1,10 @@
 @font-face {
   font-family: "intro-font";
-  src: url("../assets/fonts/Intro.otf");
+  src: url("../../assets/fonts/Intro.otf");
 }
 @font-face {
   font-family: "gothic";
-  src: url("../assets/fonts/Gothic.ttf");
+  src: url("../../assets/fonts/Gothic.ttf");
 }
 
 S ul {
@@ -23,7 +23,7 @@ body {
   -webkit-margin-start: 0;
   -webkit-padding-start: 0;
   font-family: "Roboto", sans-serif;
-  background: url("../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
+  background: url("../../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -39,25 +39,25 @@ body {
   animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.mainpage--header {
+.mainpage__header {
   width: 100%;
   height: 70px;
   background-color: #5ca5bd8a;
 }
-.mainpage--header__navigation {
+.mainpage__header__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mainpage--header__navigation--list {
+.mainpage__header__navigation__list {
   display: flex;
   width: 50%;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.mainpage--header__navigation--list li {
+.mainpage__header__navigation__list li {
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
@@ -65,7 +65,7 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.mainpage--container {
+.mainpage__container {
   width: 70%;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ body {
   flex-direction: column;
 }
 
-.mainpage--container__table {
+.mainpage__container__table {
   width: 100%;
   height: 80%;
   background-color: rgba(255, 255, 255, 0.815);
@@ -87,51 +87,51 @@ body {
   border-collapse: collapse;
 }
 
-.mainpage--container__table--header {
+.mainpage__container__table__header {
   background-color: #5ca5bdea;
   height: 40px;
   border-radius: 12px;
 }
 
-.mainpage--container__table--header__row th {
+.mainpage__container__table__header__row th {
   font-weight: 500;
 }
 
-.mainpage--container__table--body__row td {
+.mainpage__container__table__body__row td {
   text-align: center;
 }
 
-.mainpage--container__table--body__row {
+.mainpage__container__table__body__row {
   border-bottom: 1px solid rgba(128, 128, 128, 0.548);
 }
 
-.mainpage--container__table--body__flexbox {
+.mainpage__container__table__body__flexbox {
   display: flex;
   gap: 5px;
   align-items: center;
   justify-content: center;
 }
 
-.mainpage--container__table--body__flexbox img {
+.mainpage__container__table__body__flexbox img {
   width: 23px;
   height: 23px;
 }
 
-.mainpage--container__table--body__minitext {
+.mainpage__container__table__body__minitext {
   font-weight: 600;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.mainpage--container__table--pagination {
+.mainpage__container__table__pagination {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
 
-.mainpage--container__table--pagination__list {
+.mainpage__container__table__pagination__list {
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -139,14 +139,14 @@ body {
   list-style-type: none;
 }
 
-.mainpage--fillters {
+.mainpage__fillters {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 50%;
 }
 
-.mainpage--fillters__label {
+.mainpage__fillters__label {
   font-family: "gothic";
   letter-spacing: 1px;
 }
@@ -170,7 +170,7 @@ body {
     opacity: 1;
   }
 }
-.mainpage--heading {
+.mainpage__heading {
   font-family: "intro-font";
   line-height: 40px;
   margin: 0;
@@ -180,17 +180,17 @@ body {
   margin: 30px;
 }
 
-.mainpage--container__table--pagination__list--button__next {
+.mainpage__container__tablepagination__button__next {
   border: 0;
-  background: url("../assets/img/arrow-right-svgrepo-com.svg");
+  background: url("../../assets/img/arrow-right-svgrepo-com.svg");
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.mainpage--container__table--pagination__list--button__back {
+.mainpage__container__tablepagination__button__back {
   border: 0;
-  background: url("../assets/img/arrow-left-svgrepo-com.svg");
+  background: url("../../assets/img/arrow-left-svgrepo-com.svg");
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;

@@ -12,34 +12,30 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.setcode {
-  height: 100%;
-  width: 100%;
+.flexbox {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.setemail {
+  height: 100%;
+  width: 100%;
   background: /*rgba(2, 92, 69, 0.63)*/ url("../../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
 }
 
-.setcode--form {
-  display: flex;
+.setemail__form {
   flex-direction: column;
   background-color: #fff;
   border-radius: 12px;
   width: 15%;
   padding: 15px;
-  align-items: center;
-  justify-content: center;
   height: 22%;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-
-.setcode--form p {
-text-align: center;
-}
-.setcode--form input {
+.setemail__form input {
   max-width: 200px;
   height: 25px;
   border: 1px solid rgba(0, 0, 0, 0.342);
@@ -47,16 +43,20 @@ text-align: center;
   padding-left: 10px;
   margin: 5px;
 }
-.setcode--form label {
+.setemail__form label {
   text-transform: uppercase;
 }
 
-.setcode--form__link {
+.setemail__form p {
+  text-align: center;
+}
+
+.setemail__form__link {
   text-decoration: none;
   margin: 5px;
   color: black;
 }
 
-.setcode--form__link:hover {
+.setemail__form__link:hover {
   text-decoration: underline;
 }
