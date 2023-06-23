@@ -1,0 +1,57 @@
+.settingpage__heading {
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-family: 'intro-font';
+}
+.flex-box {
+    display: flex;
+    align-items: center;
+
+}
+
+.settingpage {
+    flex-direction: column;
+    height:100%;
+    width:100%;
+
+}
+
+.font-bold {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+.settingpage__container {
+    background-color: #ffffff75;
+    border-radius: 12px;
+    width:40%;
+    height:60%;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 32rem;
+}
+
+.settingpage__container__row {
+    justify-content: space-between;
+    width:100%;
+    font-size: 1.9rem;
+
+}
+
+.container__row__heading {
+    letter-spacing: 0.2rem;
+    opacity:0.5;
+    font-family: 'gothic';
+    
+}
+
+.container__avatar {
+    width:50%;
+    
+}

@@ -1,6 +1,16 @@
 html {
   max-height: 100%;
   height: 100%;
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "intro-font";
+  src: url("./fonts/Intro.otf");
+}
+@font-face {
+  font-family: "gothic";
+  src: url("./fonts/Gothic.ttf");
 }
 
 ul {
@@ -13,6 +23,16 @@ ul {
   padding-inline-start: 0px;
 }
 
+p {
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100%;
   padding: 0;
@@ -20,121 +40,42 @@ body {
   -webkit-margin-start: 0;
   -webkit-padding-start: 0;
   font-family: "Roboto", sans-serif;
-}
-
-a {
-  color: black;
-}
-
-.authpage {
-  height: 100%;
-  background-color: #ffffff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: /*rgba(2, 92, 69, 0.63)*/url('../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png');
-}
-
-.authpage__form {
-  min-width: 221px;
-  min-height: 262px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 30%;
-  width: 15%;
-  border-radius: 12px;
-  background-color: #ffffff;
+  background: url("../assets/img/1644857422_63-adonius-club-p-geometricheskii-fon-vektor-65.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-}
-
-.authpage__form label {
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.authpage__form__input {
-  height: 25px;
-  border: 1px solid rgba(0, 0, 0, 0.342);
-  border-radius: 12px;
-  padding-left: 10px;
-  margin: 5px;
-}
-
-.authpage__form__btn {
-  margin-top: 50px;
-  border: 0;
-  background-color: inherit;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 19px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 9px;
-  text-decoration: none;
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-}
-.authpage__form__btn:hover {
-  transition: 0.4s linear;
-  background: rgba(2, 92, 69, 0.63);
-  color: white;
 }
 
 @-webkit-keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.3);
-    transform: scale(0.3);
     opacity: 0.3;
   }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
     opacity: 1;
   }
 }
 
 @keyframes scale-up-center {
   0% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
     opacity: 0.3;
   }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
     opacity: 1;
   }
 }
 
-.authpag__form__gotoregister {
-  margin-top: 20px;
-  text-decoration: none;
+a {
+  color: black;
+  font-size: 1.4rem;
 }
 
-.authpage__form__gotoregister:hover {
-  text-decoration: underline;
-}
-.authpage__form__forgotpass {
-  margin-top: 10px;
-  text-decoration: none;
-}
-
-.authpage__form__forgotpass:hover {
-  text-decoration: underline;
+figure {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }

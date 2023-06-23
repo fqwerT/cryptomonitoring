@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+    <link rel="stylesheet" href="./account.css" />
+    <link rel="stylesheet" href="../../assets/styles.css" />
+  </head>
+  <body>
+    <div class="account">
+      <div class="account__user flex-box">
+        <div class="account__user__profile flex-box">
+          <figure>
+            <img
+              alt="avatar"
+              src="../../assets/img/avatar.svg"
+              class="account__user__icon"
+            />
+          </figure>
+          <ul class="account__user__menu flex-box">
+            <li class="user__info__item font-bold">user3465</li>
+            <li class="user__info__item">
+              Comments:
+              <p style="color: red">0</p>
+            </li>
+            <li class="user__info__item">
+              Age:
+              <p>34</p>
+            </li>
+          </ul>
+          <ul class="account__user__menu flex-box">
+            <li class="user__info__item font-bold upper-text">
+              <a href="#info_tab">Информация</a>
+            </li>
+            <li class="user__info__item font-bold upper-text">
+              <a href="#info_history">История</a>
+            </li>
+            <li class="user__info__item font-bold upper-text">
+              <a href="#info_favorite">Избранное</a>
+            </li>
+            <li class="user__info__item font-bold upper-text">
+              <a href="#info_chat">Чат с поддержкой</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="account__user__menu flex-box">
+          <li class="user__options__item flex-box upper-text">
+            <img alt="" src="../../assets/img/settings.svg" />
+            <a href="../SettingsPage/settings.html">Настройки</a>
+          </li>
+          <li class="user__options__item flex-box upper-text">
+            <img alt="" src="../../assets/img/exit.svg" />
+            <a href="../LoginPage/index.html">Выйти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="account__statistics">
+        <div class="account__statistics__box size" id="info_tab">
+          <h1>Информация</h1>
+          <p>Зарегистрован : 19 августа 2022</p>
+          <p>Любимая валюта : BTC</p>
+          <p>последний куср : 1 BTC - 23123123 ACCRUB</p>
+        </div>
+        <div class="account__statistics__box size" id="info_history">
+          <h1>История посещенных курсов за последние 24 часа</h1>
+          <p>5 ALGO - 9876 SBERRUB</p>
+          <p>0.05 ETH - 8765 SBERRUB</p>
+          <p>5 BTC - 71234663 SBERRUB</p>
+          <p>1231231 QWRUB - 1 BTC</p>
+        </div>
+        <div class="account__statistics__box size" id="info_favorite">
+          <h1>Любимые Обменники</h1>
+          <p>Alfa exchange</p>
+          <p>Premium exchange</p>
+          <p>PremiumBit</p>
+        </div>
+        <div class="account__statistics__box size flex-box size" id="info_chat">
+          <header class="account__statistics__header"></header>
+          <div class="account__statistics__body"></div>
+          <input />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

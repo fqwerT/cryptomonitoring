@@ -1,0 +1,145 @@
+.account {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.account__user {
+  height: 100%;
+  width: 9rem;
+  background-color: #5ca5bd8a;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.account__user:hover {
+  transition: 0.5s linear;
+  width: 22rem;
+}
+
+.account__user__menu {
+  text-align: left;
+  margin: 5px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.account__user:hover .account__user__menu .user__info__item {
+  opacity: 1;
+  transition: linear 0.2s;
+  font-size: 1.5rem;
+}
+
+.account__user:hover .account__user__menu .user__options__item a {
+  opacity: 1;
+  transition: linear 0.2s;
+  position: relative;
+  text-decoration: none;
+}
+
+.account__statistics__header {
+  width: 100%;
+  background-color: #5ca5bd8a;
+  height: 4rem;
+  border-radius: 12px;
+}
+
+.account__statistics__body {
+  height: 87%;
+  border-radius: 12px;
+  border: 1px solid #0000002a;
+  width: 90%;
+  background: url("../../assets/img/chat.jpg");
+  background-repeat: no-repeat;
+}
+
+.account__user .account__user__menu .user__info__item {
+  margin: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+  opacity: 0;
+  font-family: "gothic";
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+}
+.account__user .account__user__menu .user__info__item a {
+  text-decoration: none;
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.account__user__icon {
+  max-width: 9rem;
+  max-height: 9rem;
+}
+
+.user__options__item a {
+  opacity: 0;
+  position: absolute;
+  font-family: "gothic";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.user__options__item img {
+  width: 25px;
+  height: 25px;
+}
+
+.user__options__item {
+  justify-content: center;
+  gap: 5px;
+}
+.account__user__profile {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.account__statistics__box {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-family: "intro-font";
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.753);
+  opacity: 0;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 0;
+}
+.account__statistics__box:target {
+  opacity: 1;
+  transition: 0.5s linear;
+  position: relative;
+}
+
+.size {
+  width: 300px;
+}
+
+.account__statistics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px;
+}
+
+.font-bold {
+  font-weight: 800;
+}
