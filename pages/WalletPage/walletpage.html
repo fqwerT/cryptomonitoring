@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="./Style.css" />
   </head>
   <body>
+
     <div class="walletpage flex-box">
+      <header class="mainpage__header">
+        <nav class="mainpage__header__navigation">
+          <ul class="mainpage__header__navigation__list">
+            <li>лучшие обменники</li>
+            <li>помощь</li>
+          </ul>
+          <a href="../Account/account.html" class="mainpage__header__goAccount" ></a>
+        </nav>
+      </header>
       <section class="walletpage__chat flex-box">
         <a href="#chatbody">Чат</a>
         <div id="chatbody" class="walletpage__chat__body flex-box">
@@ -32,7 +42,12 @@
         <figure>
           <img alt="" src="../../assets/img/chart (1).png" />
         </figure>
-        <div class="walletpage__container__text">
+        <div>
+          <a href="#about" class="walletpage__row__minibox">О валюте</a>
+          <a href="#price" class="walletpage__row__minibox">Цена валюты</a></option>
+          <a href="#mining" class="walletpage__row__minibox">Как работает майнинг</a>
+        </div>
+        <div class="walletpage__container__text" id="about">
           <h1 class="walletpage__container__heading">Что такое Bitcoin?</h1>
           <p>
             Bitcoin это полностью децентрализованная цифровая криптовалюта. В
@@ -44,7 +59,7 @@
             как банки, центральный банк и платежная система).
           </p>
         </div>
-        <div class="walletpage__container__text">
+        <div class="walletpage__container__text" id="price">
           <h1 class="walletpage__container__heading">
             Цена BTC в реальном времени
           </h1>
@@ -57,23 +72,31 @@
             125 BTC монет и макс. предложение 21 000 000 BTC монет.
           </p>
         </div>
-      </div>
-      <div>
-        <label for="popular">
-          <h1 class="walletpage__popular__heading">Популярные валюты</h1>
-        </label>
-
-        <div class="walletpage__popular" id="popular">
-          <article class="walletpage__popular__box">
-            <img src="../../assets/img/bitcoin-logo-svgrepo-com.svg" />
-          </article>
-
-          <article class="walletpage__popular__box">
-            <img src="../../assets/img/game-etherium-coin-svgrepo-com.svg" />
-          </article>
-          <article class="walletpage__popular__box">
-            <img src="../../assets/img/tether-crypto-cryptocurrency-2-svgrepo-com.svg" />
-          </article>
+        <div class="walletpage__container__text" id="mining">
+          <h1 class="walletpage__container__heading">
+            Как работает майнинг Bitcoin?
+          </h1>
+          <p>
+            Словом «Майнинг» мы называем добавление новых блоков в блокчейн.
+            Если максимально просто, то биткойн-майнеры выделяют значительные
+            объемы вычислительной мощности для решения криптографической
+            проблемы, по сути очень сложной математической задачи. Успешный
+            майнер, который решает задачу раньше, чем все остальные майнеры,
+            получает вознаграждение в виде «награды за блок», которая
+            представляет собой заранее определенное количества Bitcoin. В
+            некоторых случаях награды за блоки присуждаются майнинговым пулам,
+            когда майнеры объединяют ресурсы. Как только математическая задача
+            решена, блок «подтверждается» и добавляется в цепочку блоков. Эта
+            новая информация отправляется всем узлам, или как мы называем их
+            участники Биткойн протокола, и общий реестр обновляется еще раз. По
+            мере роста цены Bitcoin вознаграждение за блок становится все более
+            привлекательным. Это побуждает все больше майнеров присоединиться к
+            “соревнованию” по добыче блоков. В свою очередь, чем больше майнеров
+            в системе, тем безопаснее сеть. Кроме того, возросшая конкуренция
+            также означает, что майнеры постоянно инвестируют в новое
+            оборудование, чтобы их вычислительные мощности оставались
+            актуальными для борьбы за вознаграждение за блоки.
+          </p>
         </div>
       </div>
     </div>

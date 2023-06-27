@@ -178,30 +178,49 @@
             </li>
           </ul>
         </nav>
-
         <h1 class="mainpage__heading">Фильтры</h1>
         <div class="mainpage__fillters">
-          <div>
             <label for="choosewallet" class="mainpage__fillters__label"
               >Отдаете:</label
             >
-            <select id="choosewallet">
+            <select id="choosewallet" class="mainpage__fillters__box">
               <option>btc</option>
               <option>algo</option>
               <option>tether</option>
               <option>acrub</option>
             </select>
-          </div>
-          <div>
-            <label for="choosetime">Получаете:</label>
-            <select id="choosetime" class="mainpage__fillters__label">
+            <label for="choosecountry" class="mainpage__fillters__label"
+              >Страна:</label
+            >
+            <select id="choosecountry"  class="mainpage__fillters__box">
+              <option>Россия</option>
+              <option>США</option>
+              <option>ОАЭ</option>
+              <option>Беларусь</option>
+            </select>
+            <label for="choosestatus" class="mainpage__fillters__label"
+              >Статус:</label
+            >
+            <select id="choosestatus"  class="mainpage__fillters__box">
+              <option>Работает</option>
+              <option>Не работает</option>
+            </select>
+            <label for="choosereserv" class="mainpage__fillters__label"
+              >Резерв:</label
+            >
+            <select id="choosereserve"  class="mainpage__fillters__box">
+              <option><1000000₽</option>
+              <option>>1000000₽</option>
+            </select>
+            <label for="choosetime" class="mainpage__fillters__label">Получаете:</label>
+            <select id="choosetime"   class="mainpage__fillters__box">
               <option>acrub</option>
               <option>btc</option>
               <option>algo</option>
               <option>qiwirub</option>
             </select>
-          </div>
         </div>
+        <h1>ВЫбранные валюты: BTC ⟶ ACRUB</h1>
         <table class="mainpage__container__table">
             <thead class="mainpage__container__table__header">
               <tr class="mainpage__container__table__header__row">
@@ -245,7 +264,6 @@
                   1232131
                 </td>
               </tr>
-
             </tbody>
           </table>
          </div>

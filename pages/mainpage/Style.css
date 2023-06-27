@@ -116,9 +116,13 @@
 
 .mainpage__fillters {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 50%;
+  width: fit-content;
+  background-color: #5ca5bdea;
+  border: 1px solid #0000003f;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .mainpage__fillters__label {
@@ -126,23 +130,16 @@
   letter-spacing: 1px;
 }
 
-#choosewallet {
+
+.mainpage__fillters__box {
   font-family: "gothic";
   text-transform: uppercase;
-  border:1px solid rgba(0, 0, 0, 0.418);
+  border:1px solid rgba(0, 0, 0, 0.301);
   padding: 3px;
   border-radius: 12px;
   font-weight: 500;
-}
-
-#choosetime {
-  font-family: "gothic";
-  text-transform: uppercase;
-  border:1px solid rgba(0, 0, 0, 0.418);
-  padding: 3px;
-  border-radius: 12px;
-  font-weight: 500;
-
+  margin: 10px;
+  
 }
 
 .mainpage__heading {
