@@ -1,0 +1,156 @@
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.walletpage {
+  justify-content: center;
+}
+
+.walletpage__container {
+  justify-content: space-between;
+  height: 100%;
+  width: 60%;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.walletpage__container h1 {
+  font-size: "intro-font";
+  letter-spacing: 0.01rem;
+}
+
+.walletpage__container__heading {
+  font-family: "intro-font";
+}
+
+.walletpage__row {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "gothic";
+  color: red;
+  border-bottom: 1px solid #5ca5bdea;
+  margin-bottom: 15px;
+}
+
+.walletpage__container__text {
+  max-width: 500px;
+  font-family: "gothic";
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.466);
+  margin: 11px;
+  border-radius: 13px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding: 5px;
+}
+
+.walletpage__row img {
+  width: 80px;
+  height: 80px;
+}
+
+.walletpage__row__minibox {
+  color: white;
+  background-color: #5ca5bdea;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.walletpage__chat {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "gothic";
+  font-weight: 700;
+  width: 200px;
+  background-color: #5ca5bd;
+  border-radius: 12px;
+  flex-direction: column;
+  padding: 15px;
+  align-self: flex-end;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.walletpage__chat:hover {
+  transition: 0.4s linear;
+}
+
+.walletpage__chat a {
+  text-decoration: none;
+  color: white;
+}
+
+.walletpage__chat__messages {
+  height: 320px;
+  margin: 10px;
+  width: 190px;
+  border-radius: 12px;
+  background: url("../../assets/img/chat.jpg");
+  background-size: 100%;
+}
+.walletpage__chat__body {
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.walletpage__chat__body:target {
+  display: block;
+}
+.walletpage__chat__footer {
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+}
+
+.walletpage__chat__footer button {
+  height: 20px;
+  width: 20px;
+  background: url("../../assets/img/arrow-right-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 0;
+}
+.walletpage__chat__footer input {
+  border-radius: 12px;
+  padding-left: 5px;
+  font-family: "gothic";
+}
+
+.walletpage__popular {
+  max-height: 270px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  align-items: center;
+  height: 270px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.walletpage__popular__box {
+  width: 90%;
+  height: 150px;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: white;
+  margin: 10px;
+}
+
+.walletpage__popular__box img {
+  max-width: 100%;
+}
+
+.walletpage__popular__heading {
+  font-family: "intro-font";
+  letter-spacing: 0.5rem;
+  text-align: center;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../assets/styles.css" />
-    <link rel="stylesheet" href="./account.css" />
+    <link rel="stylesheet" href="./Style.css" />
     <link rel="stylesheet" href="../../assets/styles.css" />
   </head>
   <body>
@@ -42,9 +42,14 @@
             <li class="user__info__item font-bold upper-text">
               <a href="#info_chat">Чат с поддержкой</a>
             </li>
-          </ul>
+          
+          </ul>  
         </div>
         <ul class="account__user__menu flex-box">
+          <li class="user__options__item flex-box upper-text">
+            <img alt="" src="../../assets/img/google-gallery-go-alt-svgrepo-com (1).svg" />
+            <a href="../mainpage/mainpage.html">На главную</a>
+          </li>
           <li class="user__options__item flex-box upper-text">
             <img alt="" src="../../assets/img/settings.svg" />
             <a href="../SettingsPage/settings.html">Настройки</a>
@@ -75,10 +80,14 @@
           <p>Premium exchange</p>
           <p>PremiumBit</p>
         </div>
-        <div class="account__statistics__box size flex-box size" id="info_chat">
-          <header class="account__statistics__header"></header>
-          <div class="account__statistics__body"></div>
-          <input />
+        <div class="account__statistics__box size flex-box" id="info_chat">
+          <header class="account__statistics__header flex-box"><div class="flex-box"><h1>Чат</h1><img src="../../assets/img/icons8-чат-50.png" alt="chat-logo"/></div></header>
+          <div class="account__statistics__body chat"></div>
+          <div class="flex-box account__statistics__chattools">
+            <input class="account__statistics__input" />
+            <button class="account__statistics__button">
+            </button>
+            </div>
         </div>
       </div>
     </div>

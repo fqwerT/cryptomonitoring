@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/styles.css" />
-    <link rel="stylesheet" href="./walletpage.css" />
+    <link rel="stylesheet" href="./Style.css" />
   </head>
   <body>
     <div class="walletpage flex-box">
+      <section class="walletpage__chat flex-box">
+        <a href="#chatbody">Чат</a>
+        <div id="chatbody" class="walletpage__chat__body flex-box">
+          <div class="walletpage__chat__messages"></div>
+          <div class="flex-box walletpage__chat__footer">
+            <input />
+            <button></button>
+          </div>
+        </div>
+      </section>
       <div class="walletpage__container flex-box">
         <h1>BTC</h1>
         <p class="walletpage__row__minibox">Рейтинг №1</p>
@@ -22,7 +32,6 @@
         <figure>
           <img alt="" src="../../assets/img/chart (1).png" />
         </figure>
-
         <div class="walletpage__container__text">
           <h1 class="walletpage__container__heading">Что такое Bitcoin?</h1>
           <p>
@@ -35,7 +44,6 @@
             как банки, центральный банк и платежная система).
           </p>
         </div>
-
         <div class="walletpage__container__text">
           <h1 class="walletpage__container__heading">
             Цена BTC в реальном времени
@@ -48,6 +56,24 @@
             ₽47 132 651 526 878 RUB. Циркулирующее предложение составляет 19 409
             125 BTC монет и макс. предложение 21 000 000 BTC монет.
           </p>
+        </div>
+      </div>
+      <div>
+        <label for="popular">
+          <h1 class="walletpage__popular__heading">Популярные валюты</h1>
+        </label>
+
+        <div class="walletpage__popular" id="popular">
+          <article class="walletpage__popular__box">
+            <img src="../../assets/img/bitcoin-logo-svgrepo-com.svg" />
+          </article>
+
+          <article class="walletpage__popular__box">
+            <img src="../../assets/img/game-etherium-coin-svgrepo-com.svg" />
+          </article>
+          <article class="walletpage__popular__box">
+            <img src="../../assets/img/tether-crypto-cryptocurrency-2-svgrepo-com.svg" />
+          </article>
         </div>
       </div>
     </div>

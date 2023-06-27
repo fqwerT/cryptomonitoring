@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .flex-box {
@@ -28,6 +29,9 @@
   margin: 5px;
   width: 100%;
   flex-direction: column;
+  
+  align-items: center;
+  justify-content: space-between;
 }
 
 .account__user:hover .account__user__menu .user__info__item {
@@ -48,6 +52,14 @@
   background-color: #5ca5bd8a;
   height: 4rem;
   border-radius: 12px;
+  font-size: 1.2rem;
+  align-items: center;
+  padding: 11px;
+}
+
+.chat {
+  background: url("../../assets/img/chat.jpg");
+  background-repeat: repeat;
 }
 
 .account__statistics__body {
@@ -55,8 +67,6 @@
   border-radius: 12px;
   border: 1px solid #0000002a;
   width: 90%;
-  background: url("../../assets/img/chat.jpg");
-  background-repeat: no-repeat;
 }
 
 .account__user .account__user__menu .user__info__item {
@@ -123,6 +133,11 @@
   justify-content: space-between;
   bottom: 0;
 }
+
+.account__statistics__box:hover {
+  width: 90%;
+  font-size: 2rem;
+}
 .account__statistics__box:target {
   opacity: 1;
   transition: 0.5s linear;
@@ -138,8 +153,38 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 25px;
+  width: 100%;
 }
 
 .font-bold {
   font-weight: 800;
+}
+.account__statistics__input {
+  padding: 8px;
+  border-radius: 12px;
+  width:50%;
+ outline-color: rgba(0, 0, 0, 0.295);
+ outline-width: 1px;
+ font-family: 'gothic';
+}
+
+.account__statistics__button {
+  width:30px;
+  height:40px;
+  background: url('../../assets/img/send-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border:0;
+}
+
+.account__statistics__chattools {
+  width:100%;
+ justify-content: center;
+ gap:10px;
+}
+
+.account__statistics__box p:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity:0.5;
 }
