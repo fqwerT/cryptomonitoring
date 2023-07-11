@@ -48,6 +48,7 @@
           </ul>
         </div>
         <ul class="account__user__menu flex-box">
+          <button class="darkmode"></button>
           <li class="user__options__item flex-box upper-text">
             <img
               alt=""
@@ -67,25 +68,38 @@
       </div>
       <div class="account__statistics">
         <div class="account__statistics__box size" id="info_tab">
-          <h1>Информация</h1>
-          <p class="account__statistics__infotext">Зарегистрован : 19 августа 2022</p>
-          <p class="account__statistics__infotext">Любимая валюта : BTC</p>
-          <p class="account__statistics__infotext">последний куср : 1 BTC - 23123123 ACCRUB</p>
+          <div class='account__statistics__infobox'>
+            <h1>Информация</h1>
+            <p class="account__statistics__infotext">
+              Зарегистрован : 19 августа 2022
+            </p>
+            <p class="account__statistics__infotext">Любимая валюта : BTC</p>
+            <p class="account__statistics__infotext">
+              последний куср : 1 BTC - 23123123 ACCRUB
+            </p>
+          </div>
+        
         </div>
         <div class="account__statistics__box size" id="info_history">
-          <h1 >История посещенных курсов за последние 24 часа</h1>
-          <p class="account__statistics__infotext">5 ALGO - 9876 SBERRUB</p>
-          <p class="account__statistics__infotext">0.05 ETH - 8765 SBERRUB</p>
-          <p class="account__statistics__infotext">5 BTC - 71234663 SBERRUB</p>
-          <p class="account__statistics__infotext">1231231 QWRUB - 1 BTC</p>
+          <div class="account__statistics__infobox">
+            <h1>История посещенных курсов за последние 24 часа</h1>
+            <p class="account__statistics__infotext">5 ALGO - 9876 SBERRUB</p>
+            <p class="account__statistics__infotext">0.05 ETH - 8765 SBERRUB</p>
+            <p class="account__statistics__infotext">5 BTC - 71234663 SBERRUB</p>
+            <p class="account__statistics__infotext">1231231 QWRUB - 1 BTC</p>
+          </div>
+
         </div>
         <div class="account__statistics__box size" id="info_favorite">
-          <h1>Любимые Обменники</h1>
+          <div class="account__statistics__infobox">
+            <h1>Любимые Обменники</h1>
           <p class="account__statistics__infotext">Alfa exchange</p>
           <p class="account__statistics__infotext">Premium exchange</p>
           <p class="account__statistics__infotext">PremiumBit</p>
+          </div>
         </div>
-        <div class="account__statistics__box  size" id="info_comms">
+        <div class="account__statistics__box size" id="info_comms">
+          <div class="account__statistics__infobox">
           <article class="account__user__comment">
             <div class="user__comment__header flex-box">
               <h1>Вы</h1>
@@ -112,22 +126,27 @@
               <p>от 0.2.09.2022</p>
             </div>
             <div class="user__comment__text">
-              <p> Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                мешает сосредоточиться. Lorem Ipsum используют потому, что тот
-                обеспечивает более или менее стандартное заполнение шаблона, а также
-                реальное распределение букв и пробелов в абзацах, которое не
-                получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст..
-                Здесь ваш текст.." Многие программы электронной вёрстки и редакторы
-                HTML используют Lorem Ipsum в качестве текста по умолчанию, так что
-                поиск по ключевым словам "lorem ipsum" сразу показывает, как много
-                веб-страниц всё ещё дожидаются своего настоящего рождения. За
-                прошедшие годы текст Lorem Ipsum получил много версий. Некоторые
-                версии появились по ошибке, некоторые - намеренно (например,
-                юмористические варианты).</p>
+              <p>
+                Давно выяснено, что при оценке дизайна и композиции читаемый
+                текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+                тот обеспечивает более или менее стандартное заполнение шаблона,
+                а также реальное распределение букв и пробелов в абзацах,
+                которое не получается при простой дубликации "Здесь ваш текст..
+                Здесь ваш текст.. Здесь ваш текст.." Многие программы
+                электронной вёрстки и редакторы HTML используют Lorem Ipsum в
+                качестве текста по умолчанию, так что поиск по ключевым словам
+                "lorem ipsum" сразу показывает, как много веб-страниц всё ещё
+                дожидаются своего настоящего рождения. За прошедшие годы текст
+                Lorem Ipsum получил много версий. Некоторые версии появились по
+                ошибке, некоторые - намеренно (например, юмористические
+                варианты).
+              </p>
             </div>
           </article>
+          </div>
         </div>
         <div class="account__statistics__box size flex-box" id="info_chat">
+          <div class="account__statistics__infobox">
           <header class="account__statistics__header flex-box">
             <div class="flex-box">
               <h1>Чат</h1>
@@ -139,8 +158,13 @@
             <input class="account__statistics__input" />
             <button class="account__statistics__button"></button>
           </div>
+          </div>
         </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="../../assets/helpers/darkmode.js"
+    ></script>
   </body>
 </html>

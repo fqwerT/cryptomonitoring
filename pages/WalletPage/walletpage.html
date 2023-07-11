@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../assets/styles.css" />
     <link rel="stylesheet" href="./Style.css" />
+   
   </head>
   <body>
-
+    <script type="text/javascript" src="../../assets/helpers/darkmode.js"></script>
     <div class="walletpage flex-box">
       <header class="mainpage__header">
         <nav class="mainpage__header__navigation">
@@ -16,8 +17,9 @@
             <li>лучшие обменники</li>
             <li>помощь</li>
           </ul>
-          <a href="../Account/account.html" class="mainpage__header__goAccount" ></a>
+         <a href="../Account/account.html"><img src='../../assets/img/house.svg' class="mainpage__header__goAccount" ></a>
         </nav>
+      <button class="darkmode"></button>
       </header>
       <section class="walletpage__chat flex-box">
         <a href="#chatbody">Чат</a>
@@ -42,11 +44,11 @@
         <figure>
           <img alt="" src="../../assets/img/chart (1).png" />
         </figure>
-        <div>
+        <nav class="walletpage__tabs__nav">
           <a href="#about" class="walletpage__row__minibox">О валюте</a>
           <a href="#price" class="walletpage__row__minibox">Цена валюты</a></option>
           <a href="#mining" class="walletpage__row__minibox">Как работает майнинг</a>
-        </div>
+                  </nav>
         <div class="walletpage__container__text" id="about">
           <h1 class="walletpage__container__heading">Что такое Bitcoin?</h1>
           <p>

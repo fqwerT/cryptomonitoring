@@ -29,7 +29,7 @@
   margin: 5px;
   width: 100%;
   flex-direction: column;
-  
+
   align-items: center;
   justify-content: space-between;
 }
@@ -48,12 +48,13 @@
 }
 
 .account__statistics__header {
-  width: 100%;
+  width: 95%;
   background-color: #5ca5bd8a;
   height: 4rem;
   border-radius: 12px;
   font-size: 1.2rem;
   align-items: center;
+  margin: 1rem;
   padding: 11px;
 }
 
@@ -63,10 +64,10 @@
 }
 
 .account__statistics__body {
-  height: 87%;
+  height: 83%;
   border-radius: 12px;
   border: 1px solid #0000002a;
-  width: 90%;
+  width: 96%;
 }
 
 .account__user .account__user__menu .user__info__item {
@@ -117,21 +118,45 @@
 }
 
 .account__statistics__box {
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   border-radius: 12px;
   font-size: 1.4rem;
   font-family: "intro-font";
   text-align: center;
   margin: 10px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.753);
   opacity: 0;
   position: absolute;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 5;
   bottom: 0;
+  overflow: hidden;
+}
+.account__statistics__box::after {
+  content: "1";
+  color: rgba(0, 0, 0, 0);
+  display: block;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--article--bckgrd);
+  filter: blur(100px);
+}
+
+.account__statistics__infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 999;
 }
 
 .account__statistics__box:hover {
@@ -166,37 +191,39 @@
 .account__statistics__input {
   padding: 8px;
   border-radius: 12px;
-  width:50%;
- outline-color: rgba(0, 0, 0, 0.295);
- outline-width: 1px;
- font-family: 'gothic';
+  width: 50%;
+  outline-color: rgba(0, 0, 0, 0.295);
+  outline-width: 1px;
+  font-family: "gothic";
+  margin: 1rem;
 }
 
 .account__statistics__button {
-  width:30px;
-  height:40px;
-  background: url('../../assets/img/send-svgrepo-com.svg');
+  width: 30px;
+  height: 40px;
+  background: url("../../assets/img/send-svgrepo-com.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border:0;
+  border: 0;
 }
 
 .account__statistics__chattools {
-  width:100%;
- justify-content: center;
- gap:10px;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
 }
 
 .account__statistics__box .account__statistics__infotext:hover {
   transform: scale(1.1);
   cursor: pointer;
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 .account__user__comment {
-  background: white;
-  height:20%;
-  width:100%;
+  background: var(--article--bckgrd);
+  height: 20%;
+  border: 1px solid var(--header-border-color);
+  width: 90%;
   min-height: 70px;
   min-width: 130px;
   border-radius: 12px;
@@ -212,11 +239,10 @@
 .user__comment__header {
   justify-content: space-between;
   padding: 5px 10px;
-
 }
 
 .user__comment__text {
-  font-family: 'intro-font';
+  font-family: "intro-font";
   text-align: left;
   padding: 5px 10px;
 }
